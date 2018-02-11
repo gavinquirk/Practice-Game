@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farscape Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- CONTAINER START -->
+    <div class="container">
+
+        <!-- JUMBOTRON -->
+        <div class="jumbotron mt-4">
+            <h1>The Farscape Battle Game</h1>
+            <hr><br>
+            <h6>Choose a hero and villain below!</h6>
+        </div>
+
+        <!-- Battle Container -->
+        <div id="battleContainer" class="row border border-light rounded">
+
+            <!-- Hero Container -->
+            <div id="heroContainer" class="col-md-4">
+                <p>Hero Container</p>
+            </div>
+
+            <!-- Fight Container -->
+            <div id="fightInfo" class="col-md-4">
+                <p>Fight Info</p>
+                <button id="fightButton">FIGHT</button>
+            </div>
+
+            <!-- Enemy Container -->
+            <div id="enemyContainer" class="col-md-4">
+                <p>Enemy Container</p>
+            </div>
+
+        </div>
+
+        <!-- Charactor Container -->
+        <div id="charContainer" class="row"></div>
+        
+    </div>
+
+
+    <!-- JQUERY -->
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
