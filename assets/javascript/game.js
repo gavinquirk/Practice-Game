@@ -73,8 +73,8 @@ $(document).ready(function() {
             chosenHero = charArr[$(this).attr("value")]
             $(this).addClass("fader")
             isHeroChosen = true
-            $("#heroContainer").html("<img id='bigImage' src='"+chosenHero.image+"'>")
-            $("#heroContainer").append("<p>"+chosenHero.name+"</p>", "<p>"+chosenHero.health+"</p>")
+            $("#heroImage").html("<img id='bigImage' src='"+chosenHero.image+"'>")
+            // $("#heroContainer").append("<p>"+chosenHero.name+"</p>", "<p>"+chosenHero.health+"</p>")
             console.log("Hero: " + chosenHero.name)
 
         }
@@ -107,6 +107,7 @@ $(document).ready(function() {
         else if (chosenHero.health > 0) {
             chosenHero.health = chosenHero.health - chosenEnemy.attack
             chosenEnemy.health = chosenEnemy.health - chosenHero.attack
+            $("#heroHealth").html("<h4>"+chosenHero.health+"</h4>")
             console.log("Hero Health Left: " + chosenHero.health)
             console.log("Enemy Health Left: " + chosenEnemy.health)
         }
